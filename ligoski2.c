@@ -20,7 +20,7 @@ int main()
 	return 0;
 }
 
-int fatorial_MUDADO(int n) {
+double fatorial_MUDADO(int n) {
 	if (n==0){
     return 1;
   }
