@@ -5,8 +5,8 @@
 int main()
 {
 	/*a historia do start stop é auto explicativa*/
-	clock_t start, stop;
-	start = clock();
+	time_t start, stop, tempo;
+	start = time(NULL);
 	/*int fatorial(int n);*/
 	/*codigo do professor*/
 	/*int pascal(int n, int k);*/
@@ -14,15 +14,15 @@ int main()
 	int pascal(double n, double k);
 	int x = pascal(30, 15);
 	printf("%d\n", x);
-	stop = clock();
-	double time = stop - start;
-	printf("%f\n", time);
+	stop = time (0);
+	tempo = stop - start;
+	printf("%ld\n", tempo);
 	return 0;
 }
 
 double fatorial_MUDADO(int n) {
 	if (n==0){
-    return 1;
+        return 1;
   }
 	return n*fatorial_MUDADO(n-1);
 }
