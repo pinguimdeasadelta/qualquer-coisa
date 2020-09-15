@@ -24,7 +24,7 @@ int fatorial_MUDADO(int n) {
 	if (n==0){
     return 1;
   }
-	return n*fatorial(n-1);
+	return n*fatorial_MUDADO(n-1);
 }
 
 /*codigo do berger*/
